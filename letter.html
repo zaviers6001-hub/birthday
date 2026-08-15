@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="A little birthday letter."
+    >
+
+    <title>A Letter For You 💌</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="letter">
+
+    <div class="ambient-background letter-background" aria-hidden="true">
+        <div class="cloud cloud-one"></div>
+        <div class="cloud cloud-two"></div>
+        <div class="ambient-particles" id="ambientParticles"></div>
+    </div>
+
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+
+            <a href="index.html" class="nav-brand">
+                <span class="brand-flower">🌻</span>
+                <span>A Little Birthday Gift Made by Zapier :></span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="navLinks">
+
+                <a href="index.html" class="nav-link">
+                    Home
+                    <span class="nav-indicator">🌻</span>
+                </a>
+
+                <a href="memories.html" class="nav-link">
+                    Memories
+                    <span class="nav-indicator">🌻</span>
+                </a>
+
+                <a href="letter.html" class="nav-link active">
+                    Letter
+                    <span class="nav-indicator">🌻</span>
+                </a>
+
+                <a href="wishes.html" class="nav-link">
+                    Wishes
+                    <span class="nav-indicator">🌻</span>
+                </a>
+
+                <a href="surprise.html" class="nav-link">
+                    Surprise
+                    <span class="nav-indicator">🌻</span>
+                </a>
+
+            </div>
+        </nav>
+    </header>
+
+
+   
+    <main id="pageContent">
+
+        <section class="page-section letter-section">
+
+            <div class="section-heading reveal">
+
+                <p class="eyebrow">
+                    Chapter two
+                </p>
+
+                <h1>
+                    A letter for you
+                    <span>💌</span>
+                </h1>
+
+            </div>
+
+
+            <article class="letter-paper reveal">
+
+                <div class="paper-flower flower-top">🌻</div>
+
+                <div class="letter-date" id="letterDate">
+                    A little note, on your special day
+                </div>
+
+                <h2 class="handwritten">
+                    Dear <span class="name-placeholder">[NAME]</span>,
+                </h2>
+
+
+               <div class="letter-body">
+
+    <p class="typewriter-paragraph">
+        I hope this little corner of the internet reminds you
+        of just how loved and appreciated you are.
+    </p>
+
+    <p class="typewriter-paragraph">
+        Birthdays are funny little pauses in time. They give us
+        a chance to look back at all the ordinary moments that
+        somehow became extraordinary simply because they were
+        shared with someone wonderful.
+    </p>
+
+    <p class="typewriter-paragraph">
+        I hope this next chapter brings you quiet mornings,
+        unexpected laughter, good conversations, beautiful
+        places, and plenty of reasons to feel proud of how far
+        you've come.
+    </p>
+
+    <p class="typewriter-paragraph">
+        Most of all, I hope you remember that you don't have
+        to have everything figured out. You are allowed to
+        grow slowly, change your mind, take breaks, dream
+        again, and become whoever you are meant to be.
+    </p>
+
+    <p class="typewriter-paragraph">
+        Thank you for being exactly who you are. The world is
+        a little warmer because you're in it.
+    </p>
+
+</div>
+
+                <div class="letter-signature">
+
+                    <p class="typewriter-paragraph">
+                        With lots of love,
+                    </p>
+
+                    <strong class="typewriter-paragraph">
+                        <span id="fromName">[YOUR NAME]</span> 🌻
+                    </strong>
+
+                </div>
+
+                <div class="paper-flower flower-bottom">✿</div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

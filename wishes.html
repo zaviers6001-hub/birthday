@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="A few warm birthday wishes."
+    >
+
+    <title>A Few Wishes For You ✨</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="wishes">
+
+    <div class="ambient-background" aria-hidden="true">
+        <div class="cloud cloud-one"></div>
+        <div class="cloud cloud-two"></div>
+        <div class="cloud cloud-three"></div>
+        <div class="ambient-particles" id="ambientParticles"></div>
+    </div>
+
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+
+            <a href="index.html" class="nav-brand">
+                <span class="brand-flower">🌻</span>
+                <span>A Little Birthday Gift Made by Zapier :></span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="navLinks">
+
+                <a href="index.html" class="nav-link">
+                    Home
+                    <span class="nav-indicator">🌻</span>
+                </a>
+
+                <a href="memories.html" class="nav-link">
+                    Memories
+                    <span class="nav-indicator">🌻</span>
+                </a>
+
+                <a href="letter.html" class="nav-link">
+                    Letter
+                    <span class="nav-indicator">🌻</span>
+                </a>
+
+                <a href="wishes.html" class="nav-link active">
+                    Wishes
+                    <span class="nav-indicator">🌻</span>
+                </a>
+
+                <a href="surprise.html" class="nav-link">
+                    Surprise
+                    <span class="nav-indicator">🌻</span>
+                </a>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main id="pageContent">
+
+        <section class="page-section wishes-section">
+
+            <div class="section-heading reveal">
+
+                <p class="eyebrow">
+                    Chapter three
+                </p>
+
+                <h1>
+                    A Few Wishes For You
+                    <span>✨</span>
+                </h1>
+
+                <p>
+                    Little hopes for the year ahead.
+                </p>
+
+            </div>
+
+
+            <div
+                class="wish-grid"
+                id="wishGrid"
+            ></div>
+
+
+           <!-- =====================================================
+     WISH ACTION
+===================================================== -->
+
+<div class="wish-action reveal">
+
+    <button
+        class="btn btn-primary"
+        id="newWishButton"
+        type="button"
+    >
+        <span>Give me one more wish</span>
+        <span>🌻</span>
+    </button>
+
+    <p class="wish-hint">
+        There may always be one more little wish.
+    </p>
+
+</div>
+
+
+<!-- =====================================================
+     MAKE A WISH
+===================================================== -->
+
+<section class="birthday-wish reveal">
+
+    <div class="birthday-wish-decoration">
+        ✦
+    </div>
+
+    <p class="eyebrow">
+        A little question for you
+    </p>
+
+    <h2>
+        Make a wish 🌻
+    </h2>
+
+    <p class="birthday-wish-description">
+        Before you continue to the final chapter,
+        there's one thing I'd love to know.
+    </p>
+
+    <p class="birthday-wish-question">
+        What is one thing you wish for?
+    </p>
+
+
+    <div class="wish-input-wrapper">
+
+        <textarea
+            id="birthdayWishInput"
+            class="birthday-wish-input"
+            placeholder="Write your wish here..."
+            maxlength="500"
+            rows="4"
+            autocomplete="off"
+        ></textarea>
+
+        <div class="wish-input-footer">
+
+            <span id="wishCharacterCount">
+                0 / 500
+            </span>
+
+            <span>
+                Keep it as simple as your heart wants. ♡
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <button
+        type="button"
+        class="btn btn-primary birthday-wish-button"
+        id="sendBirthdayWish"
+    >
+        <span id="birthdayWishButtonText">
+            Keep my wish 🌻
+        </span>
+    </button>
+
+
+    <div
+        class="birthday-wish-success"
+        id="birthdayWishSuccess"
+        aria-hidden="true"
+    >
+
+        <div class="success-sparkle">
+            ✦
+        </div>
+
+        <h3>
+            Your wish has been saved. ✨
+        </h3>
+
+        <p>
+            I hope it finds its way to you someday.
+        </p>
+
+        <strong>
+            Now let's continue the story. 🌻
+        </strong>
+
+    </div>
+
+
+    <p
+        class="birthday-wish-error"
+        id="birthdayWishError"
+        aria-live="polite"
+    ></p>
+
+</section>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
