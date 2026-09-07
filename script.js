@@ -14,6 +14,41 @@ const birthdayData = {
     birthday: "09-09-26"
 };
 
+/* =========================================================
+   BUTTON CLICK SOUND
+========================================================= */
+
+const buttonClickSound = new Audio(
+    "assets/sounds/button-click.mp3"
+);
+
+buttonClickSound.volume = 0.45;
+
+
+/*
+ * Play a fresh copy of the sound every time
+ * a button is clicked.
+ */
+document.addEventListener("click", function (event) {
+
+    const button = event.target.closest("button");
+
+    if (!button) {
+        return;
+    }
+
+    const sound = buttonClickSound.cloneNode();
+
+    sound.volume = buttonClickSound.volume;
+
+    sound.currentTime = 0;
+
+    sound.play().catch(function () {
+        // Ignore browser audio restrictions.
+    });
+
+});
+
 const memoryClickSound = new Audio("assets/sounds/photo-click.mp3");
 
 memoryClickSound.volume = 0.90;
@@ -29,51 +64,51 @@ surpriseRevealSound.volume = 0.55;
 const memories = [
 
     {
-        date: "WINI",
+        date: "🌻",
         title: "BlaBlaBla",
         image: "assets/photos/photo1.jpg",
         description:
-            "Somehow, ordinary days become special when you're around."
+            "Your little smiles always made my day :>"
     },
 
     {
-        date: "WINI",
+        date: "🌻",
         title: "BlaBlaBla",
         image: "assets/photos/photo2.jpg",
         description:
-            "One of those little moments that deserves a permanent place in memory."
+            "This person up here has a cute smile btwww"
     },
 
     {
-        date: "WINI",
+        date: "🌻",
         title: "BlaBlaBla",
         image: "assets/photos/photo3.jpg",
         description:
-            "A completely ordinary moment that somehow turned into one of our favorites."
+            "Even when you look tiring or exhausted, i always want to help you"
     },
 
     {
-        date: "WINI",
+        date: "🌻",
         title: "BlaBlaBla",
         image: "assets/photos/photo4.jpg",
         description:
-            "The best memories aren't always planned. Sometimes they simply happen."
+            "Sorry if i took your photos.. TvT, this one is cute too"
     },
 
     {
-        date: "WINI",
+        date: "🌻",
         title: "BlaBlaBla",
         image: "assets/photos/photo5.jpg",
         description:
-            "A soft reminder that beautiful things can exist in the smallest moments."
+            "Her cutest smile btw :O"
     },
 
     {
-        date: "WINI",
+        date: "🌻",
         title: "BlaBlaBla",
         image: "assets/photos/photo6.jpg",
         description:
-            "If we could keep every good moment in a little jar, this one would glow."
+            "Just by sense you near, it already made my day TVT"
     }
 
 ];
@@ -166,11 +201,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     initializeWishes();
 
+    initializeBirthdayWish();
+
     initializeSurprise();
 
     initializePageTransitions();
-
-    initializeBirthdayWish();
 
 });
 
